@@ -1,0 +1,93 @@
+[
+  {
+    "id": 0,
+    "title": "Trundle Bed",
+    "img": "img/p1-bed-1.png",
+    "price": 50.99,
+    "rating": 3.9
+  },
+  {
+    "id": 1,
+    "title": "Arm Chair",
+    "img": "img/p2-chair-1.png",
+    "price": 20.99,
+    "rating": 3.4
+  },
+  {
+    "id": 2,
+    "title": "Patio Table",
+    "img": "img/p3-dining-png.png",
+    "price": 45.99,
+    "rating": 3.8
+  },
+  {
+    "id": 3,
+    "title": "Picnic Table",
+    "img": "img/p4-table-2.png",
+    "price": 25.99,
+    "rating": 4.5
+  },
+  {
+    "id": 4,
+    "title": "Dining Table",
+    "img": "img/p5-table-1.png",
+    "price": 84.99,
+    "rating": 4.2
+  },
+  {
+    "id": 5,
+    "title": "Egg Chair",
+    "img": "img/p6-chair-3.png",
+    "price": 28.0,
+    "rating": 3.3
+  },
+  {
+    "id": 6,
+    "title": "Frame-only Bed",
+    "img": "img/p7-bed-2.png",
+    "price": 95.79,
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "title": "WingBack Chair",
+    "img": "img/p8-chair-2.png",
+    "price": 55.99,
+    "rating": 4.1
+  },
+  {
+    "id": 8,
+    "title": "Lawson Sofa",
+    "img": "img/p9-sofa-1.png",
+    "price": 65.99,
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "title": "Steel Table",
+    "img": "img/p10-table-3.png",
+    "price": 11.99,
+    "rating": 2.9
+  },
+  {
+    "id": 10,
+    "title": "Alien Sofa",
+    "img": "img/p11-sofa-2.png",
+    "price": 20.99,
+    "rating": 3.4
+  },
+  {
+    "id": 12,
+    "title": "Double Bed",
+    "img": "img/p12-bed-3.png",
+    "price": 65.24,
+    "rating": 3.4
+  },
+  {
+    "id": 13,
+    "title": "Lazy Chair",
+    "img": "img/p13-chair-4 .png",
+    "price": 2.99,
+    "rating": 1.5
+  }
+]

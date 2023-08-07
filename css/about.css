@@ -1,0 +1,66 @@
+/* ======================================================== */
+/* about section */
+.about-section {
+  width: 90vw;
+  margin-inline: auto;
+  margin-block: 4rem;
+  grid-template-areas: "one" "two";
+}
+.about-section:nth-child(1) {
+  grid-area: one;
+}
+.about-section:nth-child(2) {
+  grid-area: two;
+}
+.about-section > * img {
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+.about-info {
+  padding-inline: 0.5rem;
+}
+.about-info > p {
+  line-height: 1.8rem;
+}
+.about-info > button {
+  margin-top: 3rem;
+}
+@media (min-width: 59em) {
+  .about-section {
+    gap: 3rem;
+    align-items: center;
+    grid-template-areas: "two one";
+    grid-auto-columns: 1fr;
+  }
+}
+.team{
+  display: grid;
+  justify-items: center;
+}
+.team-members{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.team-members div{
+  flex: 0 0 auto;
+  width: 18%;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 12px;
+  min-width: 280px;
+}
+.team-members div p{
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+.team-members div h2{
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+.team-members div:hover{
+scale: 1.2;
+}
+/* ======================================================== */
