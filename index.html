@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Home</title>
+  </head>
+  <body class="home">
+    <!-- header section =============================================================-->
+
+    <hearder class="primary-header container flex">
+      <div class="header-inner-one flex">
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <button class="mobile-close-btn" data-visible="false" aria-controls="primary-navigation">
+          <i class="uil uil-times-circle"></i>
+        </button>
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li>
+              <a class="active fs-100 fs-montserrat bold-500" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="about.html">About Us</a>
+            </li>
+            <li>
+              <a class="fs-100 fs-montserrat bold-500" href="contactus.html">Contat Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-login flex">
+        <i id="login-icon" class="uil uil-user" aria-controls="login-box"></i>
+        <!-- =============================================== -->
+        <!-- login box -->
+        <div id="login-box" data-visible="false" class="login-icon">
+          <i class="uil uil-times-square" id="login-close-btn"></i>
+          <div class="wrapper">
+            <div class="title-text">
+              <div class="title login">Login Form</div>
+              <div class="title signup">Signup Form</div>
+            </div>
+            <div class="form-container">
+              <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked />
+                <input type="radio" name="slide" id="signup" />
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+              </div>
+              <div class="form-inner">
+                <form id="loginForm" action="#" class="login">
+                  <div class="field">
+                    <input id="loginInput" type="text" placeholder="User Name or Email Address" required />
+                  </div>
+                  <div class="field">
+                    <input id="lpassword" type="password" placeholder="Password" required />
+                  </div>
+                  <div class="pass-link"><input type="checkbox" id="rememberMe" /> Remember Me</div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login" />
+                  </div>
+                  <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                </form>
+                <form action="#" class="signup" id="registrationForm">
+                  <div class="field">
+                    <input type="text" placeholder="User Name" id="username" required />
+                  </div>
+                  <div class="field">
+                    <input type="text" placeholder="Email Address" id="email" required />
+                  </div>
+                  <div class="field">
+                    <input type="password" placeholder="Password" id="rpassword" required />
+                  </div>
+                  <div class="field">
+                    <input type="password" placeholder="Confirm password" id="confirmPassword" required />
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =============================================== -->
+        <i id="search-icon" aria-controls="search-box" class="uil uil-search"></i>
+        <!-- =============================================== -->
+        <!-- Search field-->
+        <div id="search-box" data-visible="false" class="search-icon">
+          <input type="text" placeholder="search here" id="search-input" />
+          <div></div>
+        </div>
+        <!-- =============================================== -->
+        <i id="cart-icon" aria-controls="cart-box" class="uil uil-shopping-cart"><p class="totalItems">0</p></i>
+        <!-- =============================================== -->
+        <!-- cart box -->
+        <div id="cart-box" data-visible="false" class="cart-icon">
+          <div class="is-empty">
+            <div class="shopping flex">
+              <p>Shopping basket</p>
+              <i class="cross-btn uil uil-times"></i>
+            </div>
+            <div class="cart bold-800 flex">
+              <i class="uil uil-shopping-cart-alt"></i>
+              <p>Cart is Empty</p>
+            </div>
+          </div>
+          <div class="cart-items"></div>
+          <div class="cart-footer">
+            <div class="total">Total: 0 [items] $ 0</div>
+            <div class="checkout large-btn text-white">Proceed to Chechout</div>
+          </div>
+        </div>
+        <!-- =============================================== -->
+      </div>
+      <div class="mobile-open-btn">
+        <i class="uil uil-align-right"></i>
+      </div>
+    </hearder>
+    <!-- header section end============================================================= -->
+
+    <!-- hero section=========================================================== -->
+    <main class="hero-section">
+      <div class="hero-inner">
+        <h1 class="fs-200 fs-poppins"><span class="text-white uppercase lineheight2 bold-bolder fs-poppins fs-600">Modern Interior Design Studio</span></h1>
+        <h4 class="fs-montserrat">Description</h4>
+        <p class="fs-montserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sunt corrupti a aperiam! Veritatis cupiditate laboriosam optio deleniti voluptatibus eum quasi esse tenetur ducimus doloremque dolore, voluptatem mollitia harum dolor?</p>
+        <button class="large-btn bg-red text-white fs-poppins fs-100"><a href="shop.html">Shop Now</a></button>
+      </div>
+      <div class="hero-inner flex">
+        <img src="img/sofa-2.png" alt="" />
+      </div>
+    </main>
+
+    <!-- hero section end======================================================= -->
+
+    <!-- product section======================================================= -->
+    <section class="product-section">
+      <!-- ****************************** 1 ************************* -->
+      <div class="category bg-black grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat">Enjoy <span class="block fs-300 fs-poppins">with</span> <span class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight">Tables</span></h3>
+          <button class="product-btn large-btn text-white bg-red fs-montserrat">Browse</button>
+        </div>
+        <div class="product-img1">
+          <img src="img/1970s-colonial-williamsburg-baker-dining-table-6945.png" alt="" />
+        </div>
+      </div>
+      <!-- ****************************** 2 ************************* -->
+      <div class="category bg-yellow grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat">Enjoy <span class="block fs-300 fs-poppins">with</span> <span class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight">Sofas</span></h3>
+          <button class="product-btn large-btn text-yellow bg-white fs-montserrat">Browse</button>
+        </div>
+        <div class="product-img2">
+          <img src="img/AngeloSofa.png" alt="" />
+        </div>
+      </div>
+      <!-- ****************************** 3 ************************* -->
+      <div class="category bg-red grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat">Enjoy <span class="block fs-300 fs-poppins">with</span> <span class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight">Barbados</span></h3>
+          <button class="product-btn large-btn text-red bg-white fs-montserrat">Browse</button>
+        </div>
+        <div class="product-img3">
+          <img src="img/Barbados-Web.png" alt="" />
+        </div>
+      </div>
+      <!-- ****************************** 4 ************************* -->
+      <div class="category bg-gray grid">
+        <div>
+          <h3 class="text-black fs-50 fs-montserrat">Enjoy <span class="block fs-300 fs-poppins">with</span> <span class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight">Beds</span></h3>
+          <button class="product-btn large-btn text-gray bg-red fs-montserrat">Browse</button>
+        </div>
+        <div class="product-img4">
+          <img src="img/p7-bed-2.png" alt="" />
+        </div>
+      </div>
+      <!-- ****************************** 5 ************************* -->
+      <div class="category bg-green grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat">Enjoy <span class="block fs-300 fs-poppins">with</span> <span class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight">Tables</span></h3>
+          <button class="product-btn large-btn text-green bg-white fs-montserrat">Browse</button>
+        </div>
+        <div class="product-img5">
+          <img src="img/p5-table-1.png" alt="" />
+        </div>
+      </div>
+      <!-- ****************************** 6 ************************* -->
+      <div class="category bg-blue grid">
+        <div>
+          <h3 class="text-white fs-50 fs-montserrat">Enjoy <span class="block fs-300 fs-poppins">with</span> <span class="earphone uppercase fs-400 fs-montserrat bold-900 lineheight">Chairs</span></h3>
+          <button class="product-btn large-btn text-blue bg-white fs-montserrat">Browse</button>
+        </div>
+        <div class="product-img6">
+          <img src="img/p8-chair-2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- product section end==================================================== -->
+
+    <!-- service section ======================================================= -->
+    <section class="service-section">
+      <div class="service">
+        <img src="img/free.svg" alt="" />
+        <div class="service-info">
+          <h3 class="fs-poppins fs-200">Free Shipping</h3>
+          <p class="fs-montserrat fs-50">Free Shipping On All Order</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="img/sett.svg" alt="" />
+        <div class="service-info">
+          <h3 class="fs-poppins fs-200">Money Guarantee</h3>
+          <p class="fs-montserrat fs-50">30 Days Money Back</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="img/supt.svg" alt="" />
+        <div class="service-info">
+          <h3 class="fs-poppins fs-200">Online Support 24/7</h3>
+          <p class="fs-montserrat fs-50">Technical Support 24/7</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="img/pay.svg" alt="" />
+        <div class="service-info">
+          <h3 class="fs-poppins fs-200">Secure Payment</h3>
+          <p class="fs-montserrat fs-50">All Cards Accepted</p>
+        </div>
+      </div>
+    </section>
+    <!-- service section end==================================================== -->
+
+    <!-- feature section ======================================================= -->
+    <section class="feature-section bg-red">
+      <div class="feature-one grid">
+        <img src="img/FrontChair_WEB.webp" alt="" />
+        <p class="text-white uppercase">20% OFF</p>
+        <p class="font-size lineheight lineheight2 fs-600 text-white fs-poppins bold-900 uppercase">Fine <span class="smile">Smile</span></p>
+        <p class="text-white fs-poppins fs-50">15 Nov & to Dec</p>
+      </div>
+      <div class="feature-info">
+        <h2 class="fs-200 text-white fs-poppins bold-500">Feel Comfortable</h2>
+        <p class="fs-poppins fs-300 bold-800 text-white">Summer Sale</p>
+        <p class="fs-montserrat text-white fs-50">Company that's grown from 270 to 480 employees in the last 12 months.</p>
+        <button class="product-btn large-btn text-red bg-white fs-poppins">Shop</button>
+      </div>
+    </section>
+    <!-- feature section end =================================================== -->
+
+    <!-- bestseller section ==================================================== -->
+    <section class="best-prodect container">
+      <h2 class="letter-spacing bold-bolder fs-300 fs-poppins">Best Seller Products</h2>
+      <p class="fs-montserrat fs-100">INNOVATING THE IDEAL WORKSPACE</p>
+    </section>
+    <section class="best-seller">
+      <div class="product grid">
+        <img src="img/1970s-colonial-williamsburg-baker-dining-table-6945.png" alt="" />
+        <p class="fs-poppins bold-500">kitchen table</p>
+        <p class="fs-poppins bold-500">$97.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/club_chair_main01.png" alt="" />
+        <p class="fs-poppins bold-500">Small Chair</p>
+        <p class="fs-poppins bold-500">$50.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/p7-bed-2.png" alt="" />
+        <p class="fs-poppins bold-500">BIg Bed</p>
+        <p class="fs-poppins bold-500">$199.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/p9-sofa-1.png" alt="" />
+        <p class="fs-poppins bold-500">Wonderful Sofa</p>
+        <p class="fs-poppins bold-500">$95.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/p2-chair-1.png" alt="" />
+        <p class="fs-poppins bold-500">FrontChair_WEB</p>
+        <p class="fs-poppins bold-500">$76.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/AngeloSofa.png" alt="" />
+        <p class="fs-poppins bold-500">AngeloSofa</p>
+        <p class="fs-poppins bold-500">$82.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/p4-table-2.png" alt="" />
+        <p class="fs-poppins bold-500">Dinning Table</p>
+        <p class="fs-poppins bold-500">$45.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+      <div class="product grid">
+        <img src="img/p1-bed-1.png" alt="" />
+        <p class="fs-poppins bold-500">hain Bed</p>
+        <p class="fs-poppins bold-500">$85.00</p>
+        <div class="product-details grid bg-red">
+          <i class="text-white uil uil-airplay"></i>
+          <i class="text-white uil uil-heart-alt"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- bestseller section end================================================= -->
+
+    <!-- feature2 section ======================================================= -->
+    <section class="feature-section bg-green">
+      <div class="feature-one grid">
+        <img src="img/dynatable.png" alt="" />
+        <p class="text-white uppercase">20% OFF</p>
+        <p class="font-size lineheight lineheight2 fs-600 text-white fs-poppins bold-900 uppercase">Fine <span class="smile">Smile</span></p>
+        <p class="text-white fs-poppins fs-50">15 Nov & to Dec</p>
+      </div>
+      <div class="feature-info">
+        <h2 class="fs-200 text-white fs-poppins bold-500">Feel Comfortable</h2>
+        <p class="fs-poppins fs-300 bold-800 text-white">Summer Sale</p>
+        <p class="fs-montserrat text-white fs-50">Company that's grown from 270 to 480 employees in the last 12 months.</p>
+        <button class="product-btn large-btn text-green bg-white fs-poppins">Shop</button>
+      </div>
+    </section>
+    <!-- feature2 section end =================================================== -->
+
+    <!-- footer section =========================================================-->
+    <section class="footer grid">
+      <div class="footer-logo grid">
+        <img src="img/logo.png" alt="" />
+        <p class="fs-montserrat fs-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facere vel saepe repellat officiis vitae! Voluptatem, nobis optio nostrum laudantium ab alias quaerat aspernatur doloremque animi, illum reprehenderit fugit commodi.</p>
+        <div class="social-media flex">
+          <i class="uil uil-facebook-f"></i>
+          <i class="uil uil-instagram"></i>
+          <i class="uil uil-twitter"></i>
+          <i class="uil uil-linkedin"></i>
+        </div>
+      </div>
+      <div class="footer-menu grid">
+        <h3 class="fs-poppins fs-100 bold-800">Quick Links</h3>
+        <ul>
+          <li><a class="fs-montserrat text-black fs-200" href="index.html">Home</a></li>
+          <li><a class="fs-montserrat text-black fs-200" href="about.html">About</a></li>
+          <li><a class="fs-montserrat text-black fs-200" href="shop.html">Shop</a></li>
+          <li><a class="fs-montserrat text-black fs-200" href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="contact grid">
+        <h3 class="fs-poppins fs-100 bold-800">Contact</h3>
+        <p>(202) 279 21 274. 7 el sakhawy st, 3rd floor app. 304. Cairo.</p>
+      </div>
+      <div class="emails grid">
+        <h3 class="fs-poppins fs-100 bold-800">Subscribe To Our Email</h3>
+        <p class="updates fs-poppins fs-300 bold-800">For Latest News & Updates</p>
+        <div class="inputfield flex bg-gray">
+          <input type="email" placeholder="Enter Your Email" class="fs-montserrat bg-gray" />
+          <button class="bg-red fs-poppins text-white fs-50">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section end ==================================================== -->
+
+    <!-- copyright section  ==================================================== -->
+    <section class="copyright">
+      <p class="c-font fs-montserrat fs-100">@2023 ITI. All rights reserved.</p>
+      <p class="fs-montserrat fs-100 text-white">Privacy Policy. Term Condition</p>
+    </section>
+
+    <!-- copyright section end ==================================================== -->
+
+    <script src="js/home.js"></script>
+  </body>
+</html>
