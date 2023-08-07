@@ -58,7 +58,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
           document.cookie = `loginInput=${encodeURIComponent(loginInput)}; expires=${expires.toUTCString()}; path=/`;
           document.cookie = `password=${encodeURIComponent(lpassword)}; expires=${expires.toUTCString()}; path=/`;
         }
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
         // alert("Login successful!");
       } else {
         alert("Incorrect password. Please try again.");
